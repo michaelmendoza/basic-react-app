@@ -1,34 +1,41 @@
 {
-  "name": "react-webpack-seed",
+  "name": "basic-react-app",
   "version": "1.0.0",
-  "description": "Simple react webpack seed",
-  "main": "main.js",
+  "description": "Simple basic app with react, react-router, sass, webpack, babel7",
+  "main": "index.js",
   "scripts": {
-    "dev": "webpack -w",
-    "test": "node server/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --open --mode development"
+  },
+  "bin": {
+    "basic-react-app": "./cli.js"
   },
   "keywords": [
-    "cryptocurrency",
-    "crypto",
-    "bitcoin",
-    "cryptomarketcap"
+    "react"
   ],
-  "author": "Michael Mendoza",
+  "author": "Michael Mendoza <iammichaelmendoza@gmail.com>",
   "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^2.0.1",
+    "file-loader": "^2.0.0",
+    "fs-extra": "^7.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
   "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.7",
-    "file-loader": "^1.1.5",
-    "node-sass": "^4.7.2",
-    "react": "^16.1.1",
-    "react-dom": "^16.1.1",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.19.0",
-    "url-loader": "^0.6.2",
-    "webpack": "^3.8.1",
-    "whatwg-fetch": "^2.0.3"
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1"
   }
 }
