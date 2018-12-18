@@ -15,10 +15,16 @@ Link the project using npm
 
 ``` npm link ```
 
-Run `basic-react-app appname` to generate a react app into `appname` folder. 
-Then install npm dependencies `cd appname; npm install`
-For development use `npm run dev` to run your app with a dev server on http://localhost:8080 
-When you are ready for production, create minified bundle with `npm run build`.
+Generate a react app into `appname` folder
+
+```basic-react-app appname```
+
+Then install npm dependencies 
+
+```cd appname; npm install```
+
+For development use `npm run dev` to run your app with a dev server on http://localhost:8080.
+For production use `npm run build` to create a minified bundled javascript file in `dist` folder.
 
 ## Architecture Overview
 
