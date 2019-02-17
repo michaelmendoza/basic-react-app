@@ -3,28 +3,28 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
-Basic React App is a react app generator. This app supports react, react-router 4, babel7 and webpack. Webpack is configured with babel with loaders for react, modern javascript (ES.Next), css, sass, and image files.
+Basic React App is a cli tool for generating a basic react applciation. This app supports react v16.6, react-router v4, babel v7 and webpack v4. Webpack is configured with babel loaders for bundling react, modern javascript (ES6), css, sass, and image files for development and production.
 
 ## Quick Start
 
 Clone source code from the github repo
 
-``` git clone https://github.com/Kornil/simple-react-app.git ```
+``` git clone https://github.com/michaelmendoza/basic-react-app.git ```
 
 Link the project using npm
 
 ``` npm link ```
 
-Run `basic-react-app appname` to generate a react app into `appname` folder. 
-Then run the following to run your app on http://localhost:8080 
+Generate a react app into `appname` folder
 
-``` 
-cd appname
-npm install
-npm run dev
-```
+```basic-react-app appname```
 
-When you are ready for production, create minified bundle with `npm run build`.
+Then install npm dependencies 
+
+```cd appname; npm install```
+
+For development use `npm run dev` to run your app with a dev server on http://localhost:8080.
+For production use `npm run build` to create a minified bundled javascript file in `dist` folder.
 
 ## Architecture Overview
 
@@ -55,7 +55,7 @@ Your project environment will include everything you need for a basic react appl
 * React, JSX, ES6
 * CSS, SASS
 * React Router v4, Material-UI 
-* Webpack script using Babel to bundle JS, JSX, CSS, SASS and Images for production 
+* Webpack script using Babel to bundle JS, JSX, CSS, SASS and Image files for production 
 * Webpack Development Server 
 
 ## Why use Basic React App?

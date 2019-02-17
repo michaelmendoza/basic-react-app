@@ -17,11 +17,11 @@
   "author": "Michael Mendoza <iammichaelmendoza@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.0",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.4",
-    "css-loader": "^2.0.1",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
     "file-loader": "^2.0.0",
     "fs-extra": "^7.0.1",
     "html-webpack-plugin": "^3.2.0",
@@ -29,13 +29,13 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
-    "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
     "react-router-dom": "^4.3.1"
   }
 }
