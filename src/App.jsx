@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import { Nav, Index, About, Users } from './containers';
+import { Nav, Header, Index, About, Users } from './containers';
 
 const Routes = () => (
   <div> 
@@ -13,7 +13,8 @@ const Routes = () => (
 const App = () => (
   <BrowserRouter>
     <section className='app'>  
-      <Nav/>
+      <Header/>
+    
       <Routes/>
     </section>
   </BrowserRouter>

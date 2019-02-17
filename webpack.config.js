@@ -11,7 +11,8 @@ module.exports = {
     rules: [
       { test: /\.(js|jsx)$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.(jpg|png)$/, loader: 'url?limit=25000' },
-      { test: /\.scss$/, loader: "style-loader!css-loader!sass-loader" }
+      { test: /\.scss$/, loader: "style-loader!css-loader!sass-loader" },
+      { test: /\.css$/, use: [{ loader: 'style-loader' }, { loader: 'css-loader' }] }
     ]
   },
   plugins: [
